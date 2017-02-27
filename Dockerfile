@@ -22,11 +22,11 @@ RUN apk update \
 
 RUN wget --no-check-certificate https://github.com/breakwa11/shadowsocks/archive/manyuser.zip -O /tmp/manyuser.zip \
     && unzip -d /tmp /tmp/manyuser.zip \
-    && mv /tmp/shadowsocks-manyuser/shadowsocks ~/shadowsocks \
+    && mv /tmp/shadowsocksr-manyuser/shadowsocks ~/shadowsocks \
     && rm -rf /tmp/*
 
 
 WORKDIR ~/shadowsocks
 
 
-CMD python ~/shadowsocks/server.py -p $SERVER_PORT -k $PASSWORD -m $METHOD  -O $PROTOCOL -o $OBFS
+CMD python ~/shadowsocks/server.py -p 2333 -k helloworld666 -m aes-256-cfb  -O auth_aes128_md5 -o tls1.2_ticket_auth
