@@ -22,7 +22,7 @@ RUN apk update \
 
 RUN wget --no-check-certificate https://github.com/breakwa11/shadowsocks/archive/manyuser.zip -O /tmp/manyuser.zip \
     && unzip -d /tmp /tmp/manyuser.zip \
-    && mv /tmp/shadowsocksr-manyuser/shadowsocks ~/shadowsocks \
+    && mv /tmp/shadowsocksr-manyuser/shadowsocksr ~/shadowsocks \
     && rm -rf /tmp/*
 
 
