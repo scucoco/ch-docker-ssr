@@ -13,11 +13,13 @@ ShadowsocksR for Docker
 	
 		Port:2333
 		
-		method:helloworld666
+		password:helloworld666
 		
-		obfs:tls1.2_ticket_auth
+		method:aes-256-cfb
 		
 		protocol:auth_aes128_md5
+		
+		obfs:tls1.2_ticket_auth
 		
 		
 		
