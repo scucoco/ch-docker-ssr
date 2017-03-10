@@ -15,9 +15,9 @@ ShadowsocksR for Docker
 		
 		password:helloworld666
 		
-		method:aes-256-cfb
+		method:aes-256-ctr
 		
-		protocol:auth_aes128_md5
+		protocol:auth_aes128_sha1
 		
 		obfs:tls1.2_ticket_auth
 		
