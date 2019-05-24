@@ -29,4 +29,4 @@ RUN wget --no-check-certificate https://github.com/breakwa11/shadowsocks/archive
 WORKDIR ~/shadowsocks
 
 
-CMD python ~/shadowsocks/server.py -p 2333 -k helloworld666 -m aes-256-ctr  -O auth_aes128_sha1 -o tls1.2_ticket_auth
+CMD python ~/shadowsocks/server.py -p 2333 -k 801201 -m aes-256-cfb  -O origin -o plain
